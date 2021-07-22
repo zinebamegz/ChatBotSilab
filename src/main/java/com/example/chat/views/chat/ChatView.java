@@ -5,6 +5,7 @@ import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.dependency.CssImport;
+import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -45,7 +46,10 @@ public class ChatView extends VerticalLayout {
         message.setPlaceholder("Entrez votre message...");
         message.setSizeFull();
 
-        Button send = new Button(VaadinIcon.LOCATION_ARROW.create(), event -> sendMessage());
+        Icon icon = new Icon(VaadinIcon.LOCATION_ARROW);
+        icon.setColor("#ecf3f8");
+
+        Button send = new Button(icon, event -> sendMessage());
         send.addClickShortcut(Key.ENTER);
 
         HorizontalLayout inputLayout = new HorizontalLayout(message, send);

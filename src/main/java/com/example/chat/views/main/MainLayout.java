@@ -8,6 +8,8 @@ import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.JsModule;
 import com.vaadin.flow.component.html.H1;
+import com.vaadin.flow.component.icon.Icon;
+import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
 import com.vaadin.flow.component.orderedlayout.HorizontalLayout;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
@@ -32,7 +34,7 @@ import java.util.Optional;
 @JsModule("./styles/shared-styles.js")
 @PWA(name = "Zee", shortName = "Zee")
 @Theme(value = Lumo.class, variant = Lumo.DARK)
-@CssImport(value = "styles/app-layout-styles.css", themeFor = "vaadin-app-layout")
+@CssImport(value = "./styles/app-layout-styles.css", themeFor = "vaadin-app-layout")
 @Push
 public class MainLayout extends AppLayout {
 
@@ -45,10 +47,15 @@ public class MainLayout extends AppLayout {
         setPrimarySection(Section.DRAWER);
         //Image logo = new Image("./images/logo.png", "LogoSilab");
         //logo.setHeight("15px");
+
         DrawerToggle drawerToggleButton = new DrawerToggle();
-        //drawerToggleButton.setIcon(logo);
+        Icon icon = new Icon(VaadinIcon.LINES);
+        icon.setColor("#ecf3f8");
+        drawerToggleButton.setIcon(icon);
+
         addToNavbar(true, drawerToggleButton);
         menu = createMenuTabs();
+
         addToDrawer(createDrawerContent(menu));
     }
 
@@ -59,18 +66,22 @@ public class MainLayout extends AppLayout {
         layout.setPadding(true);
         layout.setSpacing(true);
         layout.getThemeList().set("spacing-s", true);
-        layout.setAlignItems(FlexComponent.Alignment.STRETCH);
+
+        // To align the whole menu and its component :
+        layout.setAlignItems(FlexComponent.Alignment.CENTER);
+
         HorizontalLayout logoLayout = new HorizontalLayout();
         logoLayout.setId("logo");
         logoLayout.setAlignItems(FlexComponent.Alignment.CENTER);
         Image logo = new Image("images/logo.png", "LogoSilab");
         logo.setHeight("100px");
         logoLayout.add(logo);
-        H1 header = new H1("Zee");
-        header.setHeight("20px");
+        logoLayout.setAlignItems(FlexComponent.Alignment.CENTER);
+        //H1 header = new H1("Zee");
+        //header.setHeight("20px");
         // Pour la manipuler dans le CSS :
-        header.setClassName("h11");
-        logoLayout.add(header);
+        //header.setClassName("h11");
+        // logoLayout.add(header);
         layout.add(logoLayout, menu);
         return layout;
     }

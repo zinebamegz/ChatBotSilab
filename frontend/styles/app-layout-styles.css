@@ -1,11 +1,12 @@
-[part~="drawer"], #navbarTop {
+[part="drawer"], #navbarTop {
 	background-color: #ecf3f8;
+	color :#ecf3f8 ;
 };
 
-H1{
-color : Black
+.h11{
+color : Black;
 }
-
+/**
 .sidemenu-header {
   height: var(--lumo-size-xl);
   box-shadow: var(--lumo-box-shadow-s);
@@ -46,4 +47,4 @@ color : Black
 .sidemenu-menu vaadin-tab[selected] {
   background-color: var(--lumo-primary-color-10pct);
   color: var(--lumo-primary-text-color);
-}
+}**/
