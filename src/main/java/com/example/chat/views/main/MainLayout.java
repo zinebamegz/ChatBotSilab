@@ -32,7 +32,7 @@ import java.util.Optional;
 @JsModule("./styles/shared-styles.js")
 @PWA(name = "Zee", shortName = "Zee")
 @Theme(value = Lumo.class, variant = Lumo.DARK)
-@CssImport(value = "./styles/app-layout-styles.css", themeFor = "vaadin-app-layout")
+@CssImport(value = "styles/app-layout-styles.css", themeFor = "vaadin-app-layout")
 @Push
 public class MainLayout extends AppLayout {
 
