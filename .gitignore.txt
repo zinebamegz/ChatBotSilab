@@ -8,9 +8,10 @@
 .DS_Store
 
 node_modules/ 
-
+/node_modules/ 
+.node_modules/ 
 drivers/
-
+.node_modules
 error-screenshots/
 
 webpack.generated.js

@@ -1,4 +1,5 @@
 com\example\chat\Application.class
 com\example\chat\views\main\MainLayout.class
 com\example\chat\views\chat\MessageList.class
+com\example\chat\views\home\HomeView.class
 com\example\chat\views\chat\ChatView.class

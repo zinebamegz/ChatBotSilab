@@ -25,8 +25,8 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 @Route(value = "chat", layout = MainLayout.class)
-@RouteAlias(value = "", layout = MainLayout.class)
-@PageTitle("Chat")
+//@RouteAlias(value = "", layout = MainLayout.class)
+@PageTitle("ChatBot")
 @CssImport("styles/views/chat/chat-view.css")
 @Component
 @Scope(VaadinUIScope.VAADIN_UI_SCOPE_NAME)
@@ -37,13 +37,14 @@ public class ChatView extends VerticalLayout {
     private final TextField message = new TextField();
     private final Chat chatSession;
     private final ScheduledExecutorService executorService;
+    private String welcomeMessage;
 
-    public ChatView(Bot alice, ScheduledExecutorService executorService) {
+    public ChatView(Bot alice, ScheduledExecutorService executorService) throws InterruptedException {
         this.executorService = executorService;
         ui = UI.getCurrent();
         chatSession = new Chat(alice);
 
-        message.setPlaceholder("Entrez votre message...");
+        message.setPlaceholder("Type your message...");
         message.setSizeFull();
 
         Icon icon = new Icon(VaadinIcon.LOCATION_ARROW);
@@ -58,7 +59,22 @@ public class ChatView extends VerticalLayout {
         add(messageList, inputLayout);
         expand(messageList);
         setSizeFull();
+
+        welcomeMessage= "Hey there ! My name is Zee and I'm here to make your life easier ! ";
+        //To add an emoji using unicode (link codes:https://apps.timwhitlock.info/emoji/tables/unicode)
+        welcomeMessage += new String(Character.toChars(0x1F601));
+        welcomeMessage += " What do you want to know ?";
+        messageList.addMessage("Bot", new Avataaar("Bot"), welcomeMessage, false );
     }
+
+    /*private void welcomeMessage() throws InterruptedException {
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        messageList.addMessage("Bot", new Avataaar("Bot"), "Bienvenu !", false );
+    }*/
 
     private void sendMessage() {
         String text = message.getValue();

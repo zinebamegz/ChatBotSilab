@@ -8,10 +8,10 @@ function addCssBlock(block) {
  tpl.innerHTML = block;
  document.head.appendChild(tpl.content);
 }
-import $css_0 from 'Frontend/styles/app-layout-styles.css';
-addCssBlock(`<dom-module id="flow_css_mod_0" theme-for="vaadin-app-layout"><template><style>${$css_0}</style></template></dom-module>`);
-import $css_1 from 'Frontend/styles/views/chat/chat-view.css';
-addCssBlock(`<custom-style><style>${$css_1}</style></custom-style>`);
+import $css_0 from 'Frontend/styles/views/chat/chat-view.css';
+addCssBlock(`<custom-style><style>${$css_0}</style></custom-style>`);
+import $css_1 from 'Frontend/styles/app-layout-styles.css';
+addCssBlock(`<dom-module id="flow_css_mod_1" theme-for="vaadin-app-layout"><template><style>${$css_1}</style></template></dom-module>`);
 
 import '@polymer/iron-icon/iron-icon.js';
 import '@polymer/iron-list/iron-list.js';

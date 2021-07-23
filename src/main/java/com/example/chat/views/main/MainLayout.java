@@ -1,13 +1,14 @@
 package com.example.chat.views.main;
 
+import com.example.chat.views.Contact.ContactUsView;
 import com.example.chat.views.chat.ChatView;
+import com.example.chat.views.home.HomeView;
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.HasComponents;
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.applayout.DrawerToggle;
 import com.vaadin.flow.component.dependency.CssImport;
 import com.vaadin.flow.component.dependency.JsModule;
-import com.vaadin.flow.component.html.H1;
 import com.vaadin.flow.component.icon.Icon;
 import com.vaadin.flow.component.icon.VaadinIcon;
 import com.vaadin.flow.component.orderedlayout.FlexComponent;
@@ -17,6 +18,7 @@ import com.vaadin.flow.component.page.Push;
 import com.vaadin.flow.component.tabs.Tab;
 import com.vaadin.flow.component.tabs.Tabs;
 import com.vaadin.flow.component.tabs.TabsVariant;
+import com.vaadin.flow.router.Route;
 import com.vaadin.flow.router.RouteConfiguration;
 import com.vaadin.flow.router.RouterLink;
 import com.vaadin.flow.server.PWA;
@@ -31,6 +33,7 @@ import java.util.Optional;
 /**
  * The main view is a top-level placeholder for other views.
  */
+//@Route("")
 @JsModule("./styles/shared-styles.js")
 @PWA(name = "Zee", shortName = "Zee")
 @Theme(value = Lumo.class, variant = Lumo.DARK)
@@ -48,12 +51,15 @@ public class MainLayout extends AppLayout {
         //Image logo = new Image("./images/logo.png", "LogoSilab");
         //logo.setHeight("15px");
 
+        //Drawer Toggle set up
         DrawerToggle drawerToggleButton = new DrawerToggle();
         Icon icon = new Icon(VaadinIcon.LINES);
         icon.setColor("#ecf3f8");
         drawerToggleButton.setIcon(icon);
 
         addToNavbar(true, drawerToggleButton);
+
+        //create tabs and menu list
         menu = createMenuTabs();
 
         addToDrawer(createDrawerContent(menu));
@@ -77,11 +83,13 @@ public class MainLayout extends AppLayout {
         logo.setHeight("100px");
         logoLayout.add(logo);
         logoLayout.setAlignItems(FlexComponent.Alignment.CENTER);
+
         //H1 header = new H1("Zee");
         //header.setHeight("20px");
         // Pour la manipuler dans le CSS :
         //header.setClassName("h11");
         // logoLayout.add(header);
+
         layout.add(logoLayout, menu);
         return layout;
     }
@@ -100,12 +108,15 @@ public class MainLayout extends AppLayout {
     }
 
     /**
-     * Method to return a all available tabs
+     * Method to get all available tabs
+     * In this method your tabs need to be explicitly created
      * @return array of tabs
      */
     private static Tab[] getAvailableTabs() {
         final List<Tab> tabs = new ArrayList<>();
-        tabs.add(createTab("ChatBot", ChatView.class));
+        tabs.add(createTab("Home", HomeView.class, new Icon(VaadinIcon.HOME)));
+        tabs.add(createTab("ChatBot", ChatView.class, new Icon(VaadinIcon.COMMENT_ELLIPSIS)));
+        tabs.add(createTab("Contact us", ContactUsView.class, new Icon(VaadinIcon.ENVELOPE)));
         return tabs.toArray(new Tab[tabs.size()]);
     }
 
@@ -113,21 +124,24 @@ public class MainLayout extends AppLayout {
      * Method to create a tab
      * @param title the title of the tab to be displayed
      * @param viewClass the class to be referenced by the tab
+     * @param icon the icon to display next to the tab
      * @return tab
      */
-    private static Tab createTab(String title, Class<? extends Component> viewClass) {
-        return createTab(populateLink(new RouterLink(null, viewClass), title));
+    private static Tab createTab(String title, Class<? extends Component> viewClass, Icon icon) {
+       return createTab(populateLink(new RouterLink(null, viewClass), title), icon);
     }
 
     /**
      * Method to create a tab with a component
      * @param content contenu du tab
+     * @param icon icon the icon to display next to the tab
      * @return tab
      */
-    private static Tab createTab(Component content) {
+    private static Tab createTab(Component content, Icon icon) {
         final Tab tab = new Tab();
         tab.setClassName("tab");
-        tab.add(content);
+        HorizontalLayout layout = new HorizontalLayout(icon,content);
+        tab.add(layout);
         return tab;
     }
 
