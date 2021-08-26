@@ -44,7 +44,8 @@ public class ChatView extends VerticalLayout {
         ui = UI.getCurrent();
         chatSession = new Chat(alice);
 
-        message.setPlaceholder("Type your message...");
+        //Message affiché avant de taper un message
+        message.setPlaceholder("Tapez ici pour poser une question...");
         message.setSizeFull();
 
         Icon icon = new Icon(VaadinIcon.LOCATION_ARROW);
@@ -60,10 +61,10 @@ public class ChatView extends VerticalLayout {
         expand(messageList);
         setSizeFull();
 
-        welcomeMessage= "Hey there ! My name is Zee and I'm here to make your life easier ! ";
+        welcomeMessage= "Bonjour ! Je m'appelle Zee et je suis là pour t'assister dans ton parcours IMS.";
         //To add an emoji using unicode (link codes:https://apps.timwhitlock.info/emoji/tables/unicode)
         welcomeMessage += new String(Character.toChars(0x1F601));
-        welcomeMessage += " What do you want to know ?";
+       // welcomeMessage += " What do you want to know ?";
         messageList.addMessage("Bot", new Avataaar("Bot"), welcomeMessage, false );
     }
 
@@ -83,10 +84,11 @@ public class ChatView extends VerticalLayout {
         messageList.addMessage("Vous", new Avataaar("Human"), text, true);
         message.clear();
 
+        //Generating the answer and displaying it
         executorService.schedule(() -> {
             String answer = chatSession.multisentenceRespond(text);
             ui.access(() -> messageList.addMessage("Bot", new Avataaar("Bot"), answer, false));
-        }, new Random().ints(1000, 3000).findFirst().getAsInt(), TimeUnit.MILLISECONDS);
+        }, new Random().ints(300, 500).findFirst().getAsInt(), TimeUnit.MILLISECONDS);
     }
 
 }

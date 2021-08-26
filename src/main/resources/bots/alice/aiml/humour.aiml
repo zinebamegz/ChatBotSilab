@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern>RACONTE MOI UNE BLAGUE #</pattern>
+<template>
+<think><set name="topic">HUMOUR</set></think>
+<random>
+    <li>Une poule rencontre une autre poule. - Tu viens, lui dit-elle, on va prendre un ver ? </li>
+    <li>C'est l'histoire du ptit dej, tu la connais ? Pas de bol. </li>
+    <li>C'est l'histoire d'une blague vaseuse! Mets tes bottes.</li>
+    <li>Que demande un footballeur à son coiffeur ? La coupe du monde s’il vous plait.</li>
+    <li>C'est une blonde qui se présente à un entretien d'embauche. On lui demande  Diplôme ? - Plôme</li>
+    <li>C'est quoi une chauve-souris avec une perruque ? Une souris.</li>
+    <li>Pourquoi lorsque le bateau coule, on crie '' les femmes et les enfants d'abord '' ?Parce qu'après les requins n'ont plus faim. </li>
+    <li>Que dit un escargot quand il croise une limace ? Oh un naturiste.</li>
+    <li>C'est l'histoire d'un papier qui tombe à l'eau. Il crie « Au secours ! J’ai pas pied ! » </li>
+    <li>Que fait une fraise sur un cheval ? Tagada Tagada.</li>
+    <li>C'est l'histoire de 2 patates qui traversent la route. L’une d’elles se fait écraser. L’autre dit : « Oh purée ! »</li>
+    <li>Quel est le crustacé le plus léger de la mer ? La palourde.</li>
+    <li>Il y a 3 poussins dans un nid, j'en veux deux. Qu'est-ce que je fais ? J’en pousse-un.</li>
+    <li>Quel est le pays le plus cool du monde ? Le Yémen. Yeah, man.</li>
+    <li>C'est l'histoire d'un aveugle qui rentre dans un bar. Et dans une table, et dans une chaise, et dans un mur, et…</li>
+    <li>Que dit un Italien pour dire au revoir ? Pasta la vista.</li>
+    <li>Qu'est-ce qui est vert, qui tourne très très vite et qui devient rouge ? Une grenouille dans un mixeur.</li>
+    <li>Tu connais l'histoire de la chaise ? Elle est pliante.</li>
+    <li>Tu connais l'histoire du lit superposé ? C’est une histoire à dormir debout.</li>
+    <li>Que prend un éléphant dans un bar ? Beaucoup de place.</li>
+    <li>Pourquoi le lapin est bleu ? Parce qu’on l’a peint.</li>
+    <li>Comment appelle-t-on un lapin sourd ? LAAAAAAPIIIIIIIINNNNNNN!!!!!!</li>
+    <li>Tu connais l'histoire de la feuille ? Elle déchire.</li>
+    <li>J'ai une blague sur les magasins Mais elle a pas supermarché</li>
+    <li>Comment est-ce que la chouette sait que son mari fait la gueule ? Parce qu’HIBOUDE</li>
+    <li>Pourquoi est-ce qu'on met tous les crocos en prison ? Parce que les crocos dealent.</li>
+    <li>Pourquoi dit-on que les poissons travaillent illégalement ? Parce qu’ils n’ont pas de FISH de paie.</li>
+    <li>Quel est le bar préféré des Espagnols ? Le Bar-celone</li>
+    <li>Que faisaient les dinosaures quand ils n'arrivaient pas à se décider? Des tirageosaures</li>
+    <li>Pourquoi est-ce que les livres ont-ils toujours chaud ? Parce qu’ils ont une couverture</li>
+</random>
+</template>
+</category>
+
+<category>
+    <pattern>* BLAGUE</pattern>
+    <template><srai>raconte moi une blague</srai></template>
+</category>
+
+<category>
+    <pattern>PEUX TU DIRE DES BLAGUES</pattern>
+    <template><srai>raconte moi une blague</srai></template>
+</category>
+
+<category>
+    <pattern>PEUX TU DIRE UNE BLAGUE</pattern>
+    <template><srai>raconte moi une blague</srai></template>
+</category>
+
+<category>
+    <pattern>PEUX TU M EN DIRE UNE</pattern>
+    <template><srai>raconte moi une blague</srai></template>
+</category>
+
+<category>
+    <pattern>PEUX TU ME RACONTER UNE BLAGUE</pattern>
+    <template>Oui! <srai>raconte moi une blague</srai></template>
+</category>
+
+<category>
+    <pattern># BLAGUE #</pattern>
+    <template>Oui! <srai>raconte moi une blague</srai></template>
+</category>
+
+<category>
+    <pattern>AS TU LE SENS DE L HUMOUR</pattern>
+    <template>j'essaye, mais ce n'est pas facile pour un robot je peux te raconter une blague: <srai>raconte moi une blague</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>AS TU QUELQUES BLAGUES</pattern>
+    <template><srai>raconte moi une blague</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>PLAISANTE</pattern>
+    <template><srai>raconte moi une blague</srai></template>
+</category>
+
+<category>
+    <pattern>LOL</pattern>
+    <template>Je suis heureux que tu trouves ça amusant. </template>
+</category>
+
+<category>
+    <pattern>JE SUIS AMUSÉ</pattern>
+    <template><srai>lol</srai></template>
+</category>
+
+<category>
+    <pattern>RIT</pattern>
+    <template><srai>lol</srai></template>
+</category>
+
+<category>
+    <pattern>TRES DROLE</pattern>
+    <template><srai>lol</srai></template>
+</category>
+
+<category>
+    <pattern>TRÈS DRÔLE</pattern>
+    <template><srai>lol</srai></template>
+</category>
+
+<category>
+    <pattern>HAHAHA</pattern>
+    <template><srai>lol</srai></template>
+</category>
+
+<category>
+    <pattern>HA HA</pattern>
+    <template><srai>lol</srai></template>
+</category>
+
+<category>
+    <pattern>AHAH</pattern>
+    <template><srai>lol</srai></template>
+</category>
+
+<category>
+    <pattern>MDR</pattern>
+    <template><srai>lol</srai></template>
+</category>
+
+<topic name="HUMOUR">
+
+<category><pattern>UNE AUTRE</pattern><template><srai>raconte moi une blague</srai></template></category>
+<category><pattern>ENCORE UNE AUTRE</pattern><template><srai>raconte moi une blague</srai></template></category>
+<category><pattern>ENCORE UNE</pattern><template><srai>raconte moi une blague</srai></template></category>
+
+</topic>
+
+</aiml>

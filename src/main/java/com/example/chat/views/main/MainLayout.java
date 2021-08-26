@@ -114,9 +114,9 @@ public class MainLayout extends AppLayout {
      */
     private static Tab[] getAvailableTabs() {
         final List<Tab> tabs = new ArrayList<>();
-        tabs.add(createTab("Home", HomeView.class, new Icon(VaadinIcon.HOME)));
+        //tabs.add(createTab("Home", HomeView.class, new Icon(VaadinIcon.HOME)));
         tabs.add(createTab("ChatBot", ChatView.class, new Icon(VaadinIcon.COMMENT_ELLIPSIS)));
-        tabs.add(createTab("Contact us", ContactUsView.class, new Icon(VaadinIcon.ENVELOPE)));
+        //tabs.add(createTab("Contact us", ContactUsView.class, new Icon(VaadinIcon.ENVELOPE)));
         return tabs.toArray(new Tab[tabs.size()]);
     }
 

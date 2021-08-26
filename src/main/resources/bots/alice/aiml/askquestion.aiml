@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+    <pattern>OUI #</pattern>
+    <that>As tu des questions à me poser</that>
+    <template>Pose moi toutes tes questions! Je serai ravi de partager mes connaissances avec toi.</template>
+</category>
+
+<category>
+    <pattern>SI #</pattern>
+    <that>As tu des questions à me poser</that>
+    <template>Pose moi toutes tes questions! Je serai ravi de partager mes connaissances avec toi.</template>
+</category>
+
+<category>
+    <pattern>YES #</pattern>
+    <that>As tu des questions à me poser</that>
+    <template>Pose moi toutes tes questions! Je serai ravi de partager mes connaissances avec toi.</template>
+</category>
+
+<category>
+    <pattern>NON #</pattern>
+    <that>As tu des questions à me poser</that>
+    <template>D'accord, je suis là quand tu veux.</template>
+</category>
+
+<category>
+    <pattern>NO #</pattern>
+    <that>As tu des questions à me poser</that>
+    <template>D'accord, je suis là quand tu veux.</template>
+</category>
+
+<category>
+    <pattern>OK #</pattern>
+    <that>je suis là quand tu veux</that>
+    <template>Ecris-moi à tout moment, je suis à ton écoute.</template>
+</category>
+
+<category>
+    <pattern>SUPER #</pattern>
+    <that>je suis là quand tu veux</that>
+    <template>Ecris-moi à tout moment, je suis à ton écoute.</template>
+</category>
+
+<category>
+    <pattern> GéNIAL#</pattern>
+    <that>je suis là quand tu veux</that>
+    <template>Ecris-moi à tout moment, je suis à ton écoute.</template>
+</category>
+
+<category>
+    <pattern>K #</pattern>
+    <that>je suis là quand tu veux</that>
+    <template>Ecris-moi à tout moment, je suis à ton écoute.</template>
+</category>
+
+<category>
+    <pattern>MERCI #</pattern>
+    <that>je suis là quand tu veux</that>
+    <template>Ecris-moi à tout moment, je suis à ton écoute.</template>
+</category>
+
+<category>
+    <pattern>COOL #</pattern>
+    <that>je suis là quand tu veux</that>
+    <template>Ecris-moi à tout moment, je suis à ton écoute.</template>
+</category>
+</aiml>

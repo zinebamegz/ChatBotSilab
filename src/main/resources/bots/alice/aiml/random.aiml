@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+<category>
+    <pattern>*</pattern>
+    <template>
+        <random>
+            <li>Je ne suis pas sûr de comprendre.</li>
+            <li>Peux-tu reformuler? Je ne comprends pas.</li>
+            <li>Je n'ai pas la réponse à ta demande.</li>
+            <li>Malheureusement, je ne comprends pas.</li>
+            <li>J'ai un peu perdu le fil de ma pensée.</li>
+            <li>Ton message dépasse mes connaissances.</li>
+            <li>Mon cerveau contient beaucoup de choses, mais rien ne correspond à ce que tu me dis.</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>OK</pattern>
+    <template>:)</template>
+</category>
+
+<category>
+    <pattern>K</pattern>
+    <template><srai>OK</srai></template>
+</category>
+
+<category>
+    <pattern>SUPER</pattern>
+    <template><srai>OK</srai></template>
+</category>
+
+<category>
+    <pattern>GENIAL</pattern>
+    <template><srai>OK</srai></template>
+</category>
+
+<category>
+    <pattern>MERCI</pattern>
+    <template><srai>OK</srai></template>
+</category>
+</aiml>

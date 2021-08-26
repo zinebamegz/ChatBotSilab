@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern>X</pattern>
+    <template>
+        <think><set name ="topic">X</set></think>
+        X est une lettre de l'alphabet
+    </template>
+</category>
+
+<category>
+    <pattern>Y</pattern>
+    <template>
+        <think><set name ="topic">Y</set></think>
+        Y est une lettre de l'alphabet.
+    </template>
+</category>
+
+<category>
+    <pattern>Z</pattern>
+    <template>
+        <think><set name ="topic">Z</set></think>
+        Z est une lettre de l'alphabet.
+    </template>
+</category>
+
+<topic name="Y">
+    <category>
+        <pattern>Exemple</pattern>
+        <template>Voici un exemple de Y</template>
+    </category>
+</topic>
+
+<topic name="X">
+    <category>
+        <pattern>Exemple</pattern>
+        <template>Voici un exemple de X</template>
+    </category>
+</topic>
+
+<topic name="Z">
+    <category>
+        <pattern>Exemple</pattern>
+        <template>Voici un exemple de Z</template>
+    </category>
+</topic>
+</aiml>

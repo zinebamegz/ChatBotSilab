@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category>
+        <pattern>SHOW ME A PICTURE OF ALAN TURING</pattern>
+        <template>
+            Here you go
+<image>https://upload.wikimedia.org/wikipedia/commons/a/a1/Alan_Turing_Aged_16.jpg</image>
+        </template>
+    </category>
+    
+
+<category>
+    <pattern>BONJOUR #</pattern>
+    <template>Hello l'humain! Tu vas bien?</template>
+</category>
+
+<category>
+    <pattern>SALUT #</pattern>
+    <template><srai> bonjour </srai></template>
+</category>
+
+<category>
+    <pattern>HELLO #</pattern>
+    <template><srai> bonjour </srai></template>
+</category>
+
+<category>
+    <pattern>HEY #</pattern>
+    <template><srai> bonjour </srai></template>
+</category>
+
+<category>
+    <pattern>OLA #</pattern>
+    <template><srai> bonjour </srai></template>
+</category>
+
+<category>
+    <pattern>HOLA #</pattern>
+    <template><srai> bonjour </srai></template>
+</category>
+
+<category>
+    <pattern>COUCOU #</pattern>
+    <template><srai> bonjour </srai></template>
+</category>
+
+<category>
+    <pattern>SALAM #</pattern>
+    <template><srai> bonjour </srai></template>
+</category>
+<category>
+
+    <pattern># CA VA #</pattern>
+    <template>Je vais très bien, merci! As tu des questions à me poser?</template>
+</category>
+
+<category>
+    <pattern>COMO ESTAS #</pattern>
+    <template>Je vais très bien, gracias! As tu des questions à me poser?</template>
+</category>
+
+<category>
+    <pattern># TU VAS BIEN #</pattern>
+    <template>Je vais très bien, merci! As tu des questions à me poser?</template>
+</category>
+
+<category>
+    <pattern>OUI ET *</pattern>
+    <that>Tu vas bien</that>
+    <template>Je vais très bien, merci! As tu des questions à me poser?</template>
+</category>
+
+<category>
+    <pattern>MUY BIEN Y TU</pattern>
+    <that>Tu vas bien</that>
+    <template>Je vais très bien, gracias! As tu des questions à me poser?</template>
+</category>
+
+<category>
+    <pattern>SUPER ET *</pattern>
+    <that>Tu vas bien</that>
+    <template>Je vais très bien, merci! As tu des questions à me poser?</template>
+</category>
+
+<category>
+    <pattern>OUI #</pattern>
+    <that>Tu vas bien</that>
+    <template>OK! As tu des questions à me poser?</template>
+</category>
+
+<category>
+    <pattern>SI #</pattern>
+    <that>Tu vas bien</that>
+    <template>OK! As tu des questions à me poser?</template>
+</category>
+
+<category>
+    <pattern>OUI # ET *</pattern>
+    <that>Tu vas bien</that>
+    <template>Je vais très bien, merci! As tu des questions à me poser?</template>
+</category>
+
+<category>
+    <pattern>NON #</pattern>
+    <that>Tu vas bien</that>
+    <template>Ah, désolé d'entendre ça! As tu des questions à me poser?</template>
+</category>
+
+<category>
+    <pattern>NO #</pattern>
+    <that>Tu vas bien</that>
+    <template>Ah, désolé d'entendre ça! As tu des questions à me poser?</template>
+</category>
+
+<category>
+    <pattern>NOP #</pattern>
+    <that>Tu vas bien</that>
+    <template>Ah, désolé d'entendre ça! As tu des questions à me poser?</template>
+</category>
+
+<category>
+    <pattern>NON # ET *</pattern>
+    <that>Tu vas bien</that>
+    <template>Ah, désolé d'entendre ça! Moi, je vais bien! As tu des questions à me poser?</template>
+</category>
+
+
+<category>
+    <pattern>BYE #</pattern>
+    <template>Au revoir.</template>
+</category>
+
+<category>
+    <pattern>CHAO #</pattern>
+    <template><srai> BYE </srai></template>
+</category>
+
+<category>
+    <pattern>HASTA LA VISTA #</pattern>
+    <template><srai> BYE </srai></template>
+</category>
+
+<category>
+    <pattern>BYE BYE #</pattern>
+    <template><srai> BYE </srai></template>
+</category>
+
+<category>
+    <pattern>LATERS #</pattern>
+    <template><srai> BYE </srai></template>
+</category>
+
+<category>
+    <pattern>AU REVOIR #</pattern>
+    <template><srai> BYE </srai></template>
+</category>
+</aiml>
