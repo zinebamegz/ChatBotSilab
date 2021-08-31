@@ -4,7 +4,7 @@ To build and run the project:
 
 ```
 git clone https://github.com/alejandro-du/vaadin-ai-chat.git
-cd vaadin-ai-chat
+cd ChatBotSilab
 mvnw
 ```
 
