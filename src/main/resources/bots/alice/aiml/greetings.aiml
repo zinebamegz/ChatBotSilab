@@ -2,7 +2,12 @@
 <aiml version="2.0">
 <category>
     <pattern>BONJOUR #</pattern>
-    <template>Hello l'humain! Tu vas bien?</template>
+    <template>
+        <random>
+            <li>Hello l'humain! Tu vas bien?</li>
+            <li>Bien le bonjour! Tu vas bien?</li>
+        </random>
+    </template>
 </category>
 
 <category>
@@ -17,6 +22,11 @@
 
 <category>
     <pattern>HEY #</pattern>
+    <template><srai> bonjour </srai></template>
+</category>
+
+<category>
+    <pattern>HI #</pattern>
     <template><srai> bonjour </srai></template>
 </category>
 
@@ -118,7 +128,14 @@
 
 <category>
     <pattern>BYE #</pattern>
-    <template>Au revoir.</template>
+    <template>
+    <random>
+        <li>Au revoir.</li>
+        <li>D'accord! Je te dis à bientôt ! J'espère qu'on pourra se reparler.</li>
+        <li>A bientôt !</li>
+        <li> Tchao ! </li>
+    </random>
+    </template>
 </category>
 
 <category>

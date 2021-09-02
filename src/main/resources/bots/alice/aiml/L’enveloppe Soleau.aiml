@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># SOLEAU #</pattern>
+    <template>
+        <think><set name ="topic">Soleau</set></think>
+        L’enveloppe Soleau, du nom de son créateur, est un moyen de preuve simple et peu coûteux. Elle  vous identifie comme auteur.
+        Elle vous permet de vous constituer une preuve de création et de donner une date certaine à votre idée ou votre projet.
+        Si tu veux plus détails, écris 'plus'.
+    </template>
+</category>
+
+<topic name="Soleau">
+    <category>
+        <pattern>PLUS #</pattern>
+        <template>
+        L'enveloppe Soleau est un instrument français peu contraignant et peu coûteux servant à prouver l'antériorité d'une création intellectuelle
+        accessible à une ou plusieurs personnes physiques ou morales.
+        Il est essentiel de noter que l'enveloppe Soleau ne constitue pas un titre de propriété industrielle en tant que tel.
+        Son objectif est de dater une œuvre, une idée ou un concept et non de les protéger, il est donc essentiel d'entreprendre en parallèle le dépôt
+        d'une demande de brevet ou l'enregistrement de tout autre élément pour lequel on vise des droits de propriété industrielle.
+        </template>
+    </category>
+</topic>
+
+</aiml>

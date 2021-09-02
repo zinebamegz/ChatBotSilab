@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># AC #</pattern>
+    <template>
+        <think><set name ="topic">AC</set></think>
+        Un avantage concurrentiel consiste en tout ce qui confère à une entreprise un avantage sur ses concurrents, l’aidant à attirer plus de clients et à accroître sa part de marché. Un avantage concurrentiel peut prendre trois formes principales:
+        l’avantage de coût — produire un produit ou fournir un service à un coût inférieur à celui des concurrents,
+        l’avantage de l’offre — différencier un produit en ajoutant des fonctionnalités très appréciées des clients,
+        l’avantage de créneau (ou niche) — servir un segment précis du marché mieux que quiconque.
+    </template>
+</category>
+
+<category>
+    <pattern># AVANTAGE CONCURENTIEL #</pattern>
+    <template>
+        <srai>AC</srai>
+    </template>
+</category>
+
+<topic name="AC">
+</topic>
+
+</aiml>

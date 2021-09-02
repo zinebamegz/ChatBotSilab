@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># PORTER #</pattern>
+    <template>
+        <think><set name ="topic">PORTER</set></think>
+        Les 5 forces de Porter s’agit d’un outil d’analyse de l’environnement concurrentiel d’une entreprise.
+        Il permet ainsi à l’entreprise de se pencher sur sa situation par rapport au marché, à ses concurrents
+        notamment et d’apporter au besoin certaines corrections stratégiques. En fonction de la capacité de
+        l’entreprise à maîtriser les 5 forces de Porter, celle-ci peut avoir la capacité de faire face à la
+        concurrence des autres entreprises et de les dépasser.
+        Le concept des 5 forces de Porter a été établi par le marketeur américain Michael Porter en 1979. Ce dernier a décrit cinq forces déterminant l’environnement concurrentiel d’une entreprise comme étant :
+        le pouvoir de négociation des clients;
+        le pouvoir de négociation des fournisseurs;
+        la menace des produits de substitution;
+        la menace des nouveaux entrants sur le marché et l’intensité de la concurrence entre les entreprises dans leur secteur d’activités.
+        Veux-tu un exemple d'application?
+    </template>
+</category>
+
+<category>
+       <pattern># 5 forces #</pattern>
+       <template><srai>PORTER</srai></template>
+</category>
+
+<category>
+       <pattern># cinq forces #</pattern>
+       <template><srai>PORTER</srai></template>
+</category>
+
+<topic name="PORTER">
+<category>
+    <pattern>OUI #</pattern>
+    <template>
+        Prenons un exemple d'application sur Tesla Motors :
+        La menace de nouveaux entrants est faible, en effet proposer un véhicule électrique demande des coûteux investissements en recherche et développement. L’avance de Tesla n’est pas sans conséquence, car l’entreprise propose avec la voiture, un réseau de recharge mondial… ce qui est difficile à reproduire pour un concurrent sans de lourds investissements.
+        Le pouvoir de négociation des clients existe, en effet, il s’agit d’une voiture, ce qui représente un coût élevé pour les consommateurs. Pour autant, Tesla met en avant l’absence de carburants et de coûts de maintenance. Il faut donc le prendre en compte dans le prix d’achat de la voiture. La stratégie de Tesla de vendre uniquement dans des concessions propres ou en précommande sur Internet lui confère un certain pouvoir sur ce marché qui rend donc ce pouvoir de négociation relatif.
+        Cependant, il existe de nombreux produits de substitution, il peut s’agir de véhicules non-électriques ou plus globalement d’autres moyens de transport (bus, train, avion…).
+        L’intensité de la rivalité entre les concurrents est relative. Il y a de plus en plus de concurrents sur le marché, mais ces concurrents n’offrent pas un produit aussi qualitatif et luxueux (différents segments). La rivalité risque d’augmenter avec le modèle 3 de Tesla, un modèle plus accessible au grand public.
+        Enfin, Tesla se targue de maîtriser l’ensemble de sa chaîne de production, ce qui rend le pouvoir de négociation des fournisseurs assez faible.
+    </template>
+</category>
+
+<category>
+    <pattern>NON #</pattern>
+    <template> <think><set name ="topic">out</set></think>
+    D'accord. D'autres questions ?</template>
+</category>
+
+</topic>
+</aiml>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># AMDEC #</pattern>
+    <template>
+        <think><set name ="topic">AMDEC</set></think>
+        La méthode AMDEC est l'Analyse des Modes de Défaillances, de leurs Effets et de leur Criticité. C'est l'équivalent français de la méthode d'origine FMEA : Failure Mode, Effects, and Criticality Analysis.
+        L'AMDEC est un outil utilisé dans la démarche qualité et dans le cadre de la sûreté de fonctionnement.
+        L'AMDEC consiste à analyser :
+        les défaillances,
+        leurs causes,
+        leurs effets.
+        L'AMDEC est réalisée grâce à des contrôles :
+        de différents points de la chaîne de production,
+        du produit ou du service fini.
+        Veux-tu plus d'informations ?
+    </template>
+</category>
+
+
+<topic name="AMDEC">
+    <category>
+    <pattern>OUI #</pattern>
+    <template>Il s’agit d’une méthode permettant de prévoir les risques et possibles défaillances d’un projet, en évaluant entre 1 et 10 trois principaux aspects : la gravité, la fréquence et la probabilité de détection. Le tout permet d’obtenir un indice de criticité. Cet outil peut se décliner selon cinq types : fonctionnel, produit, process, moyen de production, et flux. Le porteur de projet peut donc traiter d’un AMDEC fonctionnel pour un produit à haut challenge technologique, un AMDEC produit en lien avec les besoins du client, ou encore un AMDEC process pour évaluer l’influence d’un risque opérationnel lié à la défaillance du produit ou service lors de son utilisation. Cet outil est présenté dans le parcours mais pourra être utilisé une fois que le porteur de projet aura mandat à travailler plus en profondeur sur le développement du projet.</template>
+    </category>
+
+    <category>
+    <pattern>NON #</pattern>
+    <template> D'accord, d'autres questions? </template>
+</category>
+</topic>
+
+</aiml>

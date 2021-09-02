@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># brevet #</pattern>
+    <template>
+        <think><set name ="topic">brevet</set></think>
+        Le brevet est un acte officiel de propriété industrielle qui accorde un monopole d’exploitation au demandeur sur son invention sur
+        le territoire français pour 20 ans au maximum. Le fait de déposer un brevet interdit toute exploitation de cette dernière sans autorisation.
+        Un droit de brevet n'est pas un droit d'exploitation, le droit d’exploitation peut être soumis à un autre formalisme tel que l'obtention d'une
+        autorisation de mise sur le marché, une certification, etc.
+    </template>
+</category>
+
+
+<topic name="brevet">
+</topic>
+
+</aiml>

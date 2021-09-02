@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># MVP #</pattern>
+    <template>
+        <think><set name ="topic">MVP</set></think>
+        « MVP » est l’acronyme de Minimum Viable Product, Produit Minimum viable en français. Brique absolument nécessaire d’un projet, le MVP permet de tester la viabilité d’un prototype minimal avant son déploiement total.
+        Le MVP est la version la plus minimaliste possible d’un produit. C’est ce minimum acceptable qui va être testé auprès d’utilisateurs, appelés clients, avant le lancement de la version aboutie du produit.
+        Veux-tu plus d'informations?
+    </template>
+</category>
+
+<category>
+    <pattern># Minimum Viable Product #</pattern>
+    <template>
+        <srai>MVP</srai>
+    </template>
+</category>
+
+<category>
+    <pattern># Produit Minimum viable #</pattern>
+    <template>
+        <srai>MVP</srai>
+    </template>
+</category>
+
+<topic name="MVP">
+<category>
+    <pattern>OUI #</pattern>
+    <template>
+        Le MVP peut aboutir à trois hypothèses différentes :
+        Il confirme la stratégie adoptée : les équipes pourront passer à la conception du produit abouti.
+        Il confirme la stratégie adoptée sous réserve de modifications du produit.
+        Il infirme la stratégie adoptée. Il faut pivoter entièrement et revoir la stratégie ou alors l’abandonner définitivement.
+        L’intérêt du MVP est triple :
+        Limiter le risque de poursuivre le développement d’un produit qui ne remporte pas le succès escompté.
+        Limiter les coûts : peu de budget est engagé dans la conception du MVP. Si le MVP s’avère être un échec et que le projet est stoppé, peu de sommes auront été engagées.
+        Obtenir une validation client pour le produit.
+    </template>
+</category>
+
+<category>
+    <pattern>NON #</pattern>
+    <template>
+        <think><set name ="topic">out</set></think>
+        D'accord. D'autres questions ?
+    </template>
+</category>
+
+</topic>
+
+</aiml>

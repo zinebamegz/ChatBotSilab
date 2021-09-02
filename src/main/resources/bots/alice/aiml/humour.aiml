@@ -2,7 +2,7 @@
 <aiml version="2.0">
 
 <category>
-<pattern>RACONTE MOI UNE BLAGUE #</pattern>
+<pattern># BLAGUE #</pattern>
 <template>
 <think><set name="topic">HUMOUR</set></think>
 <random>
@@ -39,12 +39,6 @@
 </random>
 </template>
 </category>
-
-<category>
-    <pattern>* BLAGUE</pattern>
-    <template><srai>raconte moi une blague</srai></template>
-</category>
-
 <category>
     <pattern>PEUX TU DIRE DES BLAGUES</pattern>
     <template><srai>raconte moi une blague</srai></template>
@@ -65,10 +59,6 @@
     <template>Oui! <srai>raconte moi une blague</srai></template>
 </category>
 
-<category>
-    <pattern># BLAGUE #</pattern>
-    <template>Oui! <srai>raconte moi une blague</srai></template>
-</category>
 
 <category>
     <pattern>AS TU LE SENS DE L HUMOUR</pattern>
@@ -119,6 +109,11 @@
 
 <category>
     <pattern>HA HA</pattern>
+    <template><srai>lol</srai></template>
+</category>
+
+<category>
+    <pattern>HAHA</pattern>
     <template><srai>lol</srai></template>
 </category>
 

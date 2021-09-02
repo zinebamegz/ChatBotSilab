@@ -1,6 +1,8 @@
 package com.example.chat.views.chat;
 
 import com.example.chat.views.main.MainLayout;
+import com.google.gwt.user.client.ui.HTMLTable;
+import com.vaadin.flow.component.Html;
 import com.vaadin.flow.component.Key;
 import com.vaadin.flow.component.UI;
 import com.vaadin.flow.component.button.Button;
@@ -25,7 +27,6 @@ import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
 @Route(value = "chat", layout = MainLayout.class)
-//@RouteAlias(value = "", layout = MainLayout.class)
 @PageTitle("ChatBot")
 @CssImport("styles/views/chat/chat-view.css")
 @Component
@@ -41,10 +42,13 @@ public class ChatView extends VerticalLayout {
 
     public ChatView(Bot alice, ScheduledExecutorService executorService) throws InterruptedException {
         this.executorService = executorService;
+        //Getting the current UI to modifiy it
         ui = UI.getCurrent();
+
+        //Creatin a new chat with the program ab
         chatSession = new Chat(alice);
 
-        //Message affiché avant de taper un message
+        //Shown message in the text field before writing in it
         message.setPlaceholder("Tapez ici pour poser une question...");
         message.setSizeFull();
 
@@ -78,15 +82,15 @@ public class ChatView extends VerticalLayout {
     }*/
 
     private void sendMessage() {
-        String text = message.getValue();
+        String request = message.getValue();
 
         // Avataaar : Generates an human like avatar image from a string. The string can be anything such as name, email etc.
-        messageList.addMessage("Vous", new Avataaar("Human"), text, true);
+        messageList.addMessage("Vous", new Avataaar("Human"), request, true);
         message.clear();
 
-        //Generating the answer and displaying it
+        //Generating the bot answer and displaying it
         executorService.schedule(() -> {
-            String answer = chatSession.multisentenceRespond(text);
+            String answer = chatSession.multisentenceRespond(request);
             ui.access(() -> messageList.addMessage("Bot", new Avataaar("Bot"), answer, false));
         }, new Random().ints(300, 500).findFirst().getAsInt(), TimeUnit.MILLISECONDS);
     }
