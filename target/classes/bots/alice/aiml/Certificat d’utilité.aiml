@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># UTILITE #</pattern>
+    <template>
+        <think><set name ="topic">Utilite</set></think>
+        Le certificat d’utilité est un titre de propriété industrielle délivré par l’INPI qui, comme le brevet, donne un monopole d’exploitation sur une invention,
+        mais pour une période maximale de 10 ans, au lieu de 20 ans pour le brevet.
+    </template>
+</category>
+
+<category>
+    <pattern># UTILITé #</pattern>
+    <template>
+       <srai>UTILITE</srai>
+    </template>
+</category>
+
+<category>
+    <pattern># D'UTILITé #</pattern>
+    <template>
+       <srai>UTILITE</srai>
+    </template>
+</category>
+
+<category>
+    <pattern># D'UTILITE #</pattern>
+    <template>
+       <srai>UTILITE</srai>
+    </template>
+</category>
+
+<topic name="Utilite">
+</topic>
+
+</aiml>

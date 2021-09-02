@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># STRATEGIC FIT #</pattern>
+    <template>
+        <think><set name ="topic">FIT</set></think>
+        L'alignement stratégique est la démarche de fond consistant à redessiner la stratégie générale de l’entreprise et la stratégie de développement des technologies de l'information afin qu’elles soient en parfait accord. Ceci implique une cohérence de la stratégie générale avec l’infrastructure administrative d’une part et avec l’infrastructure des applications d’autre part.
+    </template>
+</category>
+
+<category>
+    <pattern># L'ALIGNEMENT STRATEGIQUE #</pattern>
+    <template>
+        <srai>STRATEGIC FIT</srai>
+    </template>
+</category>
+
+<category>
+    <pattern># ALIGNEMENT STRATEGIQUE #</pattern>
+    <template>
+        <srai>STRATEGIC FIT</srai>
+    </template>
+</category>
+
+<category>
+    <pattern># L'ALIGNEMENT STRATéGIQUE #</pattern>
+    <template>
+        <srai>STRATEGIC FIT</srai>
+    </template>
+</category>
+
+<category>
+    <pattern># ALIGNEMENT STRATéGIQUE #</pattern>
+    <template>
+        <srai>STRATEGIC FIT</srai>
+    </template>
+</category>
+
+<topic name="FIT">
+</topic>
+
+</aiml>

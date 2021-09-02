@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># BUSINESS MODEL #</pattern>
+    <template>
+        <think><set name ="topic">BM</set></think>
+        Les business model de votre entreprise permet de comprendre les liens entre votre proposition de valeur, votre offre, vos clients, vos partenaires, vos revenus…
+        Il permet de comprendre comment votre entreprise est organisée.
+        C'est un document synthétique qui décrit la situation d'une société sur un marché donné.
+        Il apporte des précisions sur le positionnement de l'entreprise et sur ses activités.
+        Il permet d'identifier les objectifs d'une entreprise, mais également de décrire la stratégie et les ressources déployées pour les atteindre.
+        Ce document permet également de positionner une société par rapport à ses concurrents, à un instant T et dans le futur.
+        Veux-tu savoir comment définir un Busines Model ?
+    </template>
+</category>
+
+<category>
+    <pattern># BM #</pattern>
+    <template><srai>Business Model</srai></template>
+</category>
+
+ <category>
+     <pattern># MODèLE D'ENTREPRISE #</pattern>
+     <template><srai>Business Model</srai></template>
+ </category>
+
+  <category>
+      <pattern># MODELE D'ENTREPRISE #</pattern>
+      <template><srai>Business Model</srai></template>
+  </category>
+
+  <category>
+      <pattern># MODèLE D ENTREPRISE #</pattern>
+      <template><srai>Business Model</srai></template>
+  </category>
+
+   <category>
+       <pattern># MODELE D ENTREPRISE #</pattern>
+       <template><srai>Business Model</srai></template>
+   </category>
+
+    <category>
+        <pattern># MODèLE D'AFFAIRES #</pattern>
+        <template><srai>Business Model</srai></template>
+    </category>
+
+     <category>
+         <pattern># MODELE D'AFFAIRES #</pattern>
+         <template><srai>Business Model</srai></template>
+     </category>
+
+     <category>
+         <pattern># MODèLE D AFFAIRES #</pattern>
+         <template><srai>Business Model</srai></template>
+     </category>
+
+      <category>
+          <pattern># MODELE D AFFAIRES #</pattern>
+          <template><srai>Business Model</srai></template>
+      </category>
+
+<topic name="BM">
+</topic>
+<category>
+    <pattern>OUI #</pattern>
+    <template>
+        Définir le business model de votre entreprise est un prérequis indispensable à son lancement.
+        Vous ne pouvez pas mettre votre projet à flot sans vous être posé au préalable les questions suivantes :
+        Que vendez-vous et pourquoi ? (votre proposition de valeur)
+        A qui le vendez-vous ? (vos clients)
+        Avec quelles ressources le vendez-vous ? (partenaires, ressources-clés)
+        Comment le vendez-vous ? (canaux, relation-clients)
+        Combien le vendez-vous ? (flux de revenus, structure de coûts)
+        Bâtir le business model (ou “modèle d'affaires”) permet de répondre à ces questions.
+        Plusieurs outils peuvent aider à le bâtir notamment le Business Model Canvas.
+    </template>
+</category>
+</aiml>

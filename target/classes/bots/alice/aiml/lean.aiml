@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># LEAN STARTUP #</pattern>
+    <template>
+        <think><set name ="topic">LEAN</set></think>
+        Le lean start up est une approche spécifique du démarrage d'une activité économique et du lancement d'un produit.
+        Le lean startup consiste globalement à lancer rapidement un prototype de son produit ou service afin de savoir si son concept est bon et si le marché est réceptif.
+        Il fonctionne par itérations successives pour vérifier que l’offre mise en place réponde bien à la demande du marché.
+        Il permet aux entreprises de mettre en place des projets rapidement, en réduisant fortement le taux d’échec et à moindre coût..
+        L’objectif affiché du Lean Startup est de réduire les cycles de conception des nouveaux produits ou services en évaluant fréquemment les progrès réalisés auprès du
+        plus grand nombre de clients cible possibles afin de connaitre, le plus vite et le plus tôt possible leurs besoins et leurs réactions face au produit.
+    </template>
+</category>
+
+<category>
+    <pattern># LEAN START #</pattern>
+    <template>
+        <srai>LEAN STARTUP</srai>
+    </template>
+</category>
+
+<topic name="LEAN">
+</topic>
+
+</aiml>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+<pattern># POC #</pattern>
+    <template>
+        <think><set name ="topic">POC</set></think>
+        Proof of concept ou preuve de concept ou POC s'agit d'une étape de validation concrète dans la mise en place d'un projet radicalement nouveau.
+        Le but d'une preuve de concept est de démontrer l'existence d'une opportunité (on parle également de "désirabilité") et/ou la faisabilité d'un système.
+        La démarche consiste à répondre à la question "Est-ce que cela peut être fait ?" Avec les 2 dimensions suivantes : est-ce que les clients ont besoin de ce produit /
+        le désirent-ils ? / Est-on capable de le faire ? La réponse est oui ou non, "GO" ou "NO GO".
+        Une étape importante donc en vue du lancement d'un prototype pleinement fonctionnel.
+    </template>
+</category>
+
+<category>
+    <pattern># PROOF OF CONCEPT #</pattern>
+    <template>
+        <srai>POC</srai>
+    </template>
+</category>
+
+<category>
+    <pattern># PREUVE DE CONCEPT #</pattern>
+    <template>
+        <srai>POC</srai>
+    </template>
+</category>
+
+</aiml>

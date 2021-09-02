@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># PESTEL #</pattern>
+    <template>
+        <think><set name ="topic">PESTEL</set></think>
+    L’analyse PESTEL, également appelée méthode ou modèle PESTEL, est un outil d’analyse stratégique qui vous permet d’identifier les facteurs externes (opportunités et menaces) qui peuvent avoir un impact, positif ou négatif, sur votre entreprise.
+    Il fournit un point de vue global sur l’environnement de votre entreprise.
+    Voulez-vous plus d'iformations ?
+    </template>
+</category>
+
+<topic name="PESTEL">
+<category>
+    <pattern>OUI #</pattern>
+    <template>
+       L'analyse PESTEL fait généralement partie de l'analyse stratégique et doit aboutir à l'dentification des facteurs les plus influants sur le marché, la société ou l'industrie étudiée. Le modèle PESTEL s’articule autour de ces 6 composants :
+        P pour Politique : ensemble des décisions prises par les gouvernements (politique fiscale, commerce extérieur…) ;
+        E pour Économique : ensemble des facteurs qui impactent le pouvoir d’achat et le comportement des consommateurs (revenu disponible, chômage, taux d’intérêt…) ;
+        S pour Sociologique : ensemble des caractéristiques sociales influençant le pouvoir d’achat (démographie, niveau d’éducation, répartition des revenus, attitude de loisir et de travail, mobilité sociale…) ;
+        T pour Technologique : ensemble des nouveautés technologiques susceptibles de perturber le marché (dépenses publiques de recherche et développement, nouveaux brevets, découvertes…) ;
+        E pour Environnemental : ensemble des facteurs liés à l’environnement influençant la manière d’exercer l’activité (traitement des déchets, émission de pollution…) ;
+        L pour Légal : ensemble des lois et des règlements impactant le cadre légal dans lequel évolue l’entreprise.
+    </template>
+</category>
+
+<category>
+    <pattern>NON #</pattern>
+    <template>
+        <think><set name ="topic">out</set></think>
+        D'accord. D'autres questions ?
+    </template>
+</category>
+</topic>
+
+</aiml>

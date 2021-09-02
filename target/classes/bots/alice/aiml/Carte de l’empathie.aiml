@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># CARTE DE L'EMPATHIE #</pattern>
+    <template>
+        <think><set name ="topic">Empathie</set></think>
+        Une carte d'empathie correspond à un outil de représentation / visualisation de ce que ressent un client réel ou potentiel (prospect). La carte d'empathie client est utilisée pour comprendre ou faire comprendre  les sentiments et émotions pouvant être ressentis par un client dans le cadre de son parcours client.
+        La carte d'empathie peut également recenser des comportements. Veux tu savoir comment ça marche ?
+    </template>
+</category>
+
+<category>
+    <pattern># EMPATHIE #</pattern>
+    <template>
+        <srai>CARTE DE L'EMPATHIE</srai>
+    </template>
+</category>
+
+<category>
+    <pattern># EMPATHY #</pattern>
+    <template>
+        <srai>CARTE DE L'EMPATHIE</srai>
+    </template>
+</category>
+
+<topic name="Empathie">
+<category>
+    <pattern>OUI #</pattern>
+    <template>
+        La carte d’empathie repose sur les réponses apportées à 6 questions relativement simples :
+        1) Que voit le client ?
+        Quel est son environnement, qui sont ses amis, quelles sont les offres auxquelles il est exposé, quels problèmes rencontre-t-il.
+        2) Qu’entend le client ?
+        Que disent ses amis, ses collègues? Qui l’influence vraiment ? à quels médias fait-il confiance?
+        3) Que pense et que ressent le client ?
+        Quelles sont ses préoccupations majeures ? Qu’est-ce qui peut l’émouvoir ou le perturber ?
+        4) Que dit et que fait le client ?
+        Quelle est son attitude en public ? Que dit-il aux autres? Attention à l’écart possible entre ce que le client dit et ce qu’il ressent vraiment.
+        5) Que craint le client ?
+        Quelles sont ses plus grandes frustrations ? Quels sont les obstacles entre lui et ce qu’il souhaite ou veut accomplir ? Quel risque est-il prêt à prendre ?
+        6) Qu’espère le client ?
+        Que souhaite-t-il vraiment ? Quels sont ses véritables besoins ? Quels sont ses critères de succès ? Pensez aux solutions qui lui permettraient d’atteindre ses objectifs.
+    </template>
+</category>
+
+<category>
+    <pattern>NON #</pattern>
+    <template>
+        <think><set name ="topic">out</set></think>
+        D'accord. D'autres questions ?
+    </template>
+</category>
+</topic>
+</aiml>

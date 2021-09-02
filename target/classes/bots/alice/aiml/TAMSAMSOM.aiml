@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern># TAM SAM SOM #</pattern>
+    <template>
+        <think><set name ="topic">TAMSAMSOM</set></think>
+        TAM, SAM et SOM sont des acronymes représentants différents sous-ensembles d'un marché.
+        TAM : marché total disponible (Total Available Market en anglais) est l'ensemble de la demande sur le marché pour un produit ou service.
+        SAM : segment de marché disponible (Serviceable Available Market en anglais) est le segment du TAM visé par vos produits et services se trouvant à votre portée géographique.
+        SOM : segment de marché capturable (Serviceable Obtainable Market) est la portion du SAM que vous pouvez conquérir.
+        Veux-tu un exemple?
+    </template>
+</category>
+
+<category>
+    <pattern># TAMSAMSOM #</pattern>
+    <template><srai>TAM SAM SOM</srai></template>
+</category>
+
+<topic name="TAMSAMSOM">
+<category>
+    <pattern>OUI #</pattern>
+    <template>
+        Admettons que vous lanciez une chaine de fast food.
+        Votre TAM est alors le marché mondial du le fast food. Potentiellement, si vous étiez présent dans tous les pays
+        et n'aviez aucun concurrent vous généreriez un chiffre d'affaires de TAM.
+        Malheureusement ce n'est pas réaliste...
+        Admettons que vous lanciez votre chaine de restaurants dans 2 villes dans lesquelles la demande pour le fast food
+        peut être estimée à l'aide : de données statistiques sur la population et les habitudes alimentaires, et en observant
+        le chiffre d'affaires de fast food présents dans d'autres villes ayant des caractéristiques proches de vos lieux d'implantation.
+        Ceci est votre SAM : la demande pour votre type de produit à votre portée. Autrement dit : si vous étiez le seul fast food en
+        ville vous générerez un chiffre d'affaires de SAM.
+        Seulement voilà, vous n'êtes probablement pas le seul fast food en ville...
+        Donc réalistiquement vous ne pouvez espérez capturer qu'une partie de votre SAM. Vous attirerez probablement les amateurs de fast
+        food vivants ou travaillants près de vos restaurants et une fraction des gens vivants un peu plus loin curieux de découvrir un nouveau restaurant. Ceci est votre SOM.
+    </template>
+</category>
+
+<category>
+    <pattern># EXEMPLE #</pattern>
+    <template><srai>OUI</srai></template>
+</category>
+
+<category>
+    <pattern>NON #</pattern>
+    <template>
+        <think><set name ="topic">out</set></think>
+        D'accord. D'autres questions ?
+    </template>
+</category>
+
+</topic>
+</aiml>

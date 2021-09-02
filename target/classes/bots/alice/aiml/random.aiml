@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml version="2.0">
+
 <category>
     <pattern>*</pattern>
     <template>
@@ -16,27 +17,70 @@
 </category>
 
 <category>
-    <pattern>OK</pattern>
-    <template>:)</template>
+    <pattern># OK #</pattern>
+    <template>
+        <random>
+            <li>Super !</li>
+            <li>Parfait !</li>
+            <li>Très bien !</li>
+        </random>
+    </template>
 </category>
 
 <category>
-    <pattern>K</pattern>
+    <pattern>K # </pattern>
     <template><srai>OK</srai></template>
 </category>
 
 <category>
-    <pattern>SUPER</pattern>
+    <pattern># GéNIAL #</pattern>
     <template><srai>OK</srai></template>
 </category>
 
 <category>
-    <pattern>GENIAL</pattern>
+    <pattern># D'ACCORD # </pattern>
     <template><srai>OK</srai></template>
 </category>
 
 <category>
-    <pattern>MERCI</pattern>
+    <pattern>#  OKK #</pattern>
     <template><srai>OK</srai></template>
 </category>
+
+<category>
+    <pattern>#  COOL #</pattern>
+    <template><srai>OK</srai></template>
+</category>
+
+<category>
+    <pattern># SUPER #</pattern>
+    <template><srai>OK</srai></template>
+</category>
+
+<category>
+    <pattern># GENIAL #</pattern>
+    <template><srai>OK</srai></template>
+</category>
+
+<category>
+    <pattern># MERCI #</pattern>
+    <template>
+        <random>
+        <li>Avec plaisir.</li>
+        <li>Au plaisir de te répondre.</li>
+        <li>Derien!</li>
+        </random>
+    </template>
+</category>
+
+<category>
+    <pattern>NON</pattern>
+    <template>
+        <random>
+                <li>D'accord. Je suis là quand tu veux.</li>
+                <li>Okeps!</li>
+        </random>
+    </template>
+</category>
+
 </aiml>
